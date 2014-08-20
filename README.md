@@ -12,10 +12,10 @@ unzip master.zip
 cd avviatori-master
 ./avviatore.sh
 ```
-*Downlaod deb package
-Or you can download the deb package and install it.
+*Downlaod pacchetto deb
+Oppure puoi scaricare il pacchetto deb da installare se hai una distribuzione Debian o derivata.
 ```sh
 wget https://github.com/bersani96/avviatori/blob/master/avviatori.deb
 dpkg -i avviatori.deb
 ```
-It will create also a starter in the menù.
+Questo inserirà anche un avviatore nel menù.
