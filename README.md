@@ -1,5 +1,4 @@
 #AVVIATORI
-======
 Questo script ha lo scopo di velocizzare e facilitare la creazione di avviatori per il menù (file .dekstop).
 Questi avviatori saranno inseriti automaticamente nel menù.
 
