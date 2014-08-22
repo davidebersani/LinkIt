@@ -15,7 +15,15 @@ individua_borwser(){
 			type chromium
 			if [ $? -eq 1]
 			then
-				b="nessuno"
+				type chromium-browser
+				if [ $? -eq 1]
+				then
+					b="nessuno"
+				else
+					b="chromium-browser"
+				fi
+			else
+				b="chromium"
 			fi
 		else
 		b="chrome"
