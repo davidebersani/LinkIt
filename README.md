@@ -8,30 +8,30 @@ Requirements:
 
 For install this script you have two possibilities:
 - You can download source code from GitHub and install it manually.
-```
+```sh
 wget https://github.com/bersani96/LinkIt/archive/master.zip
 unzip master.zip
 ```
 With these istructions you download and extract the script and other files.
 Insert it in a directory of PATH.
-```
+```sh
 cd LinkIt-master
 sudo mv litkit.sh /usr/bin/
-```
+```sh
 Now you can launch the script with a simple comand.
-```
+```sh
 linkit.sh
 ```
 
 - Or you can download the deb package from here and install it:
-```
+```sh
 code
 ```
 If you choose to install the deb package you can launch the script with the comand "linkit.sh" or using the launcher in your menù.
 
 #Usage
 For launch the script you can use the command:
-```
+```sh
 linkit.sh
 ```
 or you can use the launcher in your menù. After you have launched the script, follow the execution and your custom launchers will be created.
