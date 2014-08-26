@@ -23,9 +23,10 @@ Now you can launch the script with a simple comand.
 linkit.sh
 ```
 
-- Or you can download the deb package from here and install it:
+- Or you can download the [deb package from here] (https://github.com/bersani96/LinkIt/blob/master/linkit.deb) and install it:
 ```sh
-code
+wget https://github.com/bersani96/LinkIt/blob/master/linkit.deb
+sudo dpkg -i linkit.deb
 ```
 If you choose to install the deb package you can launch the script with the comand "linkit.sh" or using the launcher in your menù.
 
