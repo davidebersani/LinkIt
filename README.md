@@ -17,7 +17,7 @@ Insert it in a directory of PATH.
 ```sh
 cd LinkIt-master
 sudo mv litkit.sh /usr/bin/
-```sh
+```
 Now you can launch the script with a simple comand.
 ```sh
 linkit.sh
