@@ -88,6 +88,16 @@ nome=`zenity --entry --title="$prog" --text="Insert the name of your launcher"`
 touch $nome.desktop
 file_desktop
 chmod +x $nome.desktop
+zenity --question --title="$prog" --text="Do you want to add this launcher to your desktop?"
+if [ $? -eq 0 ]
+then
+	if [ -e ~/Desktop ]
+	then
+		cp $nome.desktop ~/Desktop/
+	else
+		cp $nome.desktop ~/Scrivania/
+	fi
+fi
 mv $nome.desktop ~/.local/share/applications/
 if [ $? -eq 0 ]
 then
