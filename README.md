@@ -2,9 +2,12 @@
 This is a script for bash that allow you to simplify and accelerate the creation of launchers for menù (.dekstop file). 
 Launchers that are created with this script will automatically added to your menù and, if you want, you can add it also in your dekstop. These launchers work on every dekstop enviroment: KDE, Gnome, LXDE, XFCE, MATE and other! 
 
-#New version 2.1!
+#New version 2.2!
 ##Changelog
-Version 2.1: Added the possibility to add your launchers in your desktop.
+-Version 2.2: 
+	*Introduced a configuration file! It is /etc/linkit.conf.
+	*Introduced a setup file.
+-Version 2.1: Added the possibility to add your launchers in your desktop.
 
 #Installation
 Requirements:
