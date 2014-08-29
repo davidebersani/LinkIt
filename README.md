@@ -23,7 +23,7 @@ With these istructions you download and extract the script and other files.
 Insert it in a directory of PATH.
 ```sh
 cd LinkIt-master
-sudo mv litkit.sh /usr/bin/
+./setup.sh
 ```
 Now you can launch the script with a simple comand.
 ```sh
