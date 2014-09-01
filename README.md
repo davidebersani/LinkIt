@@ -1,6 +1,6 @@
 #Link It
-This is a script for bash that allow you to simplify and accelerate the creation of launchers for menù (.dekstop file). 
-Launchers that are created with this script will automatically added to your menù and, if you want, you can add it also in your dekstop. These launchers work on every dekstop enviroment: KDE, Gnome, LXDE, XFCE, MATE and other! 
+This is a script for bash that allow you to simplify and accelerate the creation of launchers for menu (.dekstop file). 
+Launchers that are created with this script will automatically added to your menu and, if you want, you can add it also in your dekstop. These launchers work on every dekstop enviroment: KDE, Gnome, LXDE, XFCE, MATE and other! 
 
 #New version 2.2!
 ##Changelog
@@ -33,5 +33,7 @@ For launch the script you can use the command:
 ```sh
 linkit.sh
 ```
-or you can use the launcher in your menù. After you have launched the script, follow the execution and your custom launchers will be created.
+or you can use the launcher in your menu. 
+![Image of manu with Link It](http://sonnino1aquile.altervista.org/file/linkit-menu.png)
+After you have launched the script, follow the execution and your custom launchers will be created.
 The script have a GUI.
