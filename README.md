@@ -13,14 +13,12 @@ Launchers that are created with this script will automatically added to your men
 Requirements:
 - zenity
 
-For install this script you have two possibilities:
-- You can download source code from GitHub and install it manually.
+For install this script:
 ```sh
 wget https://github.com/bersani96/LinkIt/archive/master.zip
 unzip master.zip
 ```
-With these istructions you download and extract the script and other files.
-Insert it in a directory of PATH.
+With these istructions you download and extract the script and other files. Now install it.
 ```sh
 cd LinkIt-master
 ./setup.sh
@@ -29,13 +27,6 @@ Now you can launch the script with a simple comand.
 ```sh
 linkit.sh
 ```
-
-- Or you can download the [deb package from here] (https://github.com/bersani96/LinkIt/blob/master/linkit.deb) and install it:
-```sh
-wget https://github.com/bersani96/LinkIt/blob/master/linkit.deb
-sudo dpkg -i linkit.deb
-```
-If you choose to install the deb package you can launch the script with the comand "linkit.sh" or using the launcher in your menù.
 
 #Usage
 For launch the script you can use the command:
