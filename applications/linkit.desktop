@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=linkit
+Icon=/usr/share/icons/hicolor/48x48/linkit.png
+Exec=linkit.sh
+Terminal=false
+Categories=Utility;Accessories;
