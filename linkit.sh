@@ -15,11 +15,11 @@ set_browser(){
 
 # Create .desktop file (launcher for the menu)
 file_desktop(){
-    echo "[Desktop Entry]"  >> $name.desktop
-    echo "Encoding=UTF-8"   >> $name.desktop
-    echo "Type=Application" >> $name.desktop
-    echo "Version=1.0"      >> $name.desktop
-    echo "Name=$name"       >> $name.desktop
+    echo "[Desktop Entry]"  >> "$name".desktop
+    echo "Encoding=UTF-8"   >> "$name".desktop
+    echo "Type=Application" >> "$name".desktop
+    echo "Version=1.0"      >> "$name".desktop
+    echo "Name=$name"       >> "$name".desktop
 
     # Check if the user want to use a custom icon
     zenity --question --title="$prog" --text="Do you want to use a custom icon ?\nIf not, a default icon will be used."
@@ -27,10 +27,10 @@ file_desktop(){
     then
         # Choose the icon
         icon=`zenity --file-selection --title="Choose the icon"`
-        echo "Icon=$icon" >> $name.desktop
+        echo "Icon=$icon" >> "$name".desktop
     else
         # Else use a default icon
-        echo "Icon=application-default-icon" >> $name.desktop
+        echo "Icon=application-default-icon" >> "$name".desktop
     fi
     choose=`zenity --list --title="$prog" \
         --text="What does the launcher should open ?" \
@@ -41,24 +41,24 @@ file_desktop(){
     case $choose in
         "Command")
             cmd=`zenity --entry --title="$prog" --text="Insert the command"`
-            echo "Exec=$cmd" >> $name.desktop
+            echo "Exec=$cmd" >> "$name".desktop
             ;;
         "URL address")
             set_browser
             cmd=`zenity --entry --title="$prog" --text="Insert the address"`
-            echo "Exec=$b $cmd" >> $name.desktop
+            echo "Exec=$b $cmd" >> "$name".desktop
             ;;
     esac
     zenity --question --title="$prog" --text="Does the launcher start in a terminal ?"
     if [ $? -eq 0 ]
     then
-        echo "Terminal=true"  >> $name.desktop
+        echo "Terminal=true"  >> "$name".desktop
     else
-        echo "Terminal=false" >> $name.desktop
+        echo "Terminal=false" >> "$name".desktop
     fi
     c=`zenity --list --title="$prog" --text="Choose the category" --column="Options: " "AudioVideo" "Audio" "Video" "Development" "Education"\
         "Game" "Graphics" "Network" "Office" "Settings" "System"`
-    echo "Categories=$c" >> $name.desktop
+    echo "Categories=$c" >> "$name".desktop
 }
 
 
@@ -74,20 +74,20 @@ then
 fi
 
 # Create the file
-touch $name.desktop
+touch "$name".desktop
 file_desktop
-chmod +x $name.desktop
+chmod +x "$name".desktop
 zenity --question --title="$prog" --text="Do you want to add this launcher to your desktop?"
 if [ $? -eq 0 ]
 then
     if [ -e ~/Desktop ]
     then
-        cp $name.desktop ~/Desktop/
+        cp "$name".desktop ~/Desktop/
     else
-        cp $name.desktop ~/Scrivania/
+        cp "$name".desktop ~/Scrivania/
     fi
 fi
-mv $name.desktop ~/.local/share/applications/
+mv "$name".desktop ~/.local/share/applications/
 if [ $? -eq 0 ]
 then
     zenity --info --title="$prog" --text="Launcher successfully created"
