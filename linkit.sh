@@ -78,14 +78,9 @@ touch "$name".desktop
 file_desktop
 chmod +x "$name".desktop
 zenity --question --title="$prog" --text="Do you want to add this launcher to your desktop?"
-if [ $? -eq 0 ]
+if [ $? -eq 0 ] && [ -e ~/Desktop/ ]
 then
-    if [ -e ~/Desktop ]
-    then
-        cp "$name".desktop ~/Desktop/
-    else
-        cp "$name".desktop ~/Scrivania/
-    fi
+    cp "$name".desktop ~/Desktop/
 fi
 mv "$name".desktop ~/.local/share/applications/
 if [ $? -eq 0 ]
