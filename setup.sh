@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # This script installs LinkIt automatically
 # It must be executed as root

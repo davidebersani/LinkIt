@@ -6,6 +6,11 @@ KDE, Gnome, LXDE, XFCE, MATE and others!
 
 # New version 2.2!
 ## Changelog
+- Version 3.0
+	* A lot of changes have benn introduced in this version! A big thanks to @MisterDA 
+	* Correct many typos and grammar errors. Improve readability, fix indentation
+	* Prevent potential bug if $name contains special characters
+	* Stop if not run by root
 - Version 2.2:
     * Introduced a configuration file! It is `/etc/linkit.conf`.
     * Introduced a setup file.
