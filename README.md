@@ -34,4 +34,4 @@ linkit.sh
 ![Image of menu with Link It](http://sonnino1aquile.altervista.org/file/linkit-menu.png)
 
 After you have launched the script, follow the execution and your custom launchers will be created.
-The script have a GUI.
+The script has a GUI.

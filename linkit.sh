@@ -78,10 +78,13 @@ touch "$name".desktop
 file_desktop
 chmod +x "$name".desktop
 zenity --question --title="$prog" --text="Do you want to add this launcher to your desktop?"
-if [ $? -eq 0 ] && [ -e ~/Desktop/ ]
+test -f ${XDG_CONFIG_HOME:-~/.config}/user-dirs.dirs && source ${XDG_CONFIG_HOME:-~/.config}/user-dirs.dirs
+desktop=${XDG_DESKTOP_DIR:-$HOME/Desktop}
+if [ $? -eq 0 ] && [ -e "$desktop" ]
 then
-    cp "$name".desktop ~/Desktop/
+    cp "$name".desktop "$desktop"
 fi
+mkdir -p "~/.local/share/applications/"
 mv "$name".desktop ~/.local/share/applications/
 if [ $? -eq 0 ]
 then
