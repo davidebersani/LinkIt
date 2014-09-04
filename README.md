@@ -1,4 +1,6 @@
 # LinkIt
+#Attention! This is a testing version! 
+If you want a stable version go to "master" [https://github.com/bersani96/LinkIt](branch).
 LinkIt is a Bash script that allows you to simplify and accelerate the creation of launchers for menu (.dekstop file).  
 Launchers that are created with this script will automatically be added to your menu and, if you want it, also on your desktop.  
 These launchers work on every desktop environment that follows the [Freedesktop specs](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html):
