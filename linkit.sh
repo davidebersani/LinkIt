@@ -37,15 +37,20 @@ file_desktop(){
         --column="Options :" \
         "Command" \
         "URL address"`
-
+	es=$?
+	check_status
     case $choose in
         "Command")
             cmd=`zenity --entry --title="$prog" --text="Insert the command"`
+            es=$?
+			check_status
             echo "Exec=$cmd" >> "$name".desktop
             ;;
         "URL address")
             set_browser
             cmd=`zenity --entry --title="$prog" --text="Insert the address"`
+            es=$?
+			check_status
             echo "Exec=$b $cmd" >> "$name".desktop
             ;;
     esac
@@ -56,9 +61,21 @@ file_desktop(){
     else
         echo "Terminal=false" >> "$name".desktop
     fi
-    c=`zenity --list --title="$prog" --text="Choose the category" --column="Options: " "AudioVideo" "Audio" "Video" "Development" "Education"\
-        "Game" "Graphics" "Network" "Office" "Settings" "System"`
+    zenity --list --checklist --column="" --column="Categories" false "AudioVideo" false "Audio" false "Video" false "Development" false "Education" false "Game" false "Graphics" false "Network" false "Office" false "Settings" false "System" > categories
+    es=$?
+	check_status
+	c=`cut -d "|" -f 1- --output-delimiter ";" categories`
     echo "Categories=$c" >> "$name".desktop
+    rm categories
+}
+
+#This 
+check_status(){
+	if [ $es -ne 0 ]
+	then
+		rm $name.desktop
+		exit 1
+	fi
 }
 
 

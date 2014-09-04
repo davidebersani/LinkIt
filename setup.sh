@@ -8,6 +8,8 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
+./uninstall.sh
+
 cp linkit.sh /usr/bin/
 cp -R etc/linkit/ /etc/
 cp applications/linkit.desktop /usr/share/applications
