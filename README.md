@@ -1,5 +1,6 @@
 # LinkIt
 #Attention! This is a testing version! 
+
 If you want a stable version go to "master" [https://github.com/bersani96/LinkIt](branch).
 =====
 LinkIt is a Bash script that allows you to simplify and accelerate the creation of launchers for menu (.dekstop file).  
