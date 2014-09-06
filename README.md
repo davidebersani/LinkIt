@@ -39,7 +39,7 @@ Requirements:
 
 With these instructions you can download and extract the script :
 ```sh
-wget https://github.com/bersani96/LinkIt/archive/master.zip
+wget https://github.com/bersani96/LinkIt/archive/testing.zip
 unzip master.zip
 cd LinkIt-master
 ```
