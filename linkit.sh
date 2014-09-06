@@ -18,7 +18,7 @@ while getopts "n:i:c:e:t:dgvh" opt; do
     case  $opt in
     	g)
     		echo "Starting linkit with GUI..."
-    		./linkit-gui.sh
+    		linkit-gui.sh
     		exit 0
     		;;
     	v)
