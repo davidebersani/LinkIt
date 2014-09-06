@@ -2,8 +2,8 @@
 Encoding=UTF-8
 Type=Application
 Version=1.0
-Name=linkit
+Name=LinkIt GUI
 Icon=/usr/share/icons/hicolor/48x48/linkit.png
-Exec=linkit.sh
+Exec=linkit-gui.sh
 Terminal=false
 Categories=Utility;Accessories;

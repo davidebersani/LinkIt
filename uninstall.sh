@@ -8,7 +8,7 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
-sudo rm /usr/bin/linkit.sh
+sudo rm /usr/bin/linkit.sh /usr/bin/linkit-gui.sh
 sudo rm -rf /etc/linkit
 sudo rm /usr/share/applications/linkit.desktop
 sudo rm /usr/share/icons/hicolor/48x48/linkit.png

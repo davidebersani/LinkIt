@@ -10,10 +10,11 @@ fi
 
 ./uninstall.sh
 
-cp linkit.sh /usr/bin/
+cp linkit.sh linkit-gui.sh /usr/bin/
 cp -R etc/linkit/ /etc/
 cp applications/linkit.desktop /usr/share/applications
 cp applications/linkit.png /usr/share/icons/hicolor/48x48/
 
 echo "Installation successful."
 echo "Launch LinkIt from terminal with linkit.sh or find it in your menu."
+echo "Type linkit.sh -h to get help."

@@ -48,12 +48,29 @@ Then launch as root :
 ./setup.sh
 ```
 
-Now you can launch the script with a simple command, or you can use the launcher in your menu.
+Now you can launch the script from terminal with a simple command:
 ```sh
 linkit.sh
 ```
+or you can use the version with GUI using the launcher in your menu.
 
 ![Image of menu with Link It](http://sonnino1aquile.altervista.org/file/linkit-menu.png)
 
-After you have launched the script, follow the execution and your custom launchers will be created.
-The script has a GUI.
+# Usage
+
+To use LinkIt from terminal type
+```sh
+linkit.sh OPTION [ARGUMENTS]...
+```
+The aviable options are:
+- 	-h	Show this help
+- 	-n NAME	Set the name of the launcher
+- 	-i ICON	Set the icon
+- 	-t TYPE\TSet type (a -> addres, c-> command). Insert ALWAYS -t before -e!!!
+- 	-e COMMAND	Set the command to execute (command or URL)
+- 	-c CATEGORY;CATEGORY;....	Set the categories separeted by ;
+- 	-d	Add the launcher to your Desktop 
+- 	-g	Start LinkIt with GUI
+- 	-v	Show version
+
+If you use the launcher in your menu the version with GUI will be started.
