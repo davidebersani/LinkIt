@@ -4,7 +4,7 @@ Launchers that are created with this script will automatically be added to your 
 These launchers work on every desktop environment that follows the [Freedesktop specs](http://standards.freedesktop.org/desktop-entry-spec/latest/index.html):
 KDE, Gnome, LXDE, XFCE, MATE and others!
 
-# New version 2.2!
+# New version 3.2!
 ## Changelog
 - Version 3.2
 	* Bug fix: fixed a bug that didn't create a directory
