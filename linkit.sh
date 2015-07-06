@@ -101,7 +101,7 @@ if [ $? -eq 0 ] && [ -e "$desktop" ]
 then
     cp "$name".desktop "$desktop"
 fi
-mkdir -p "~/.local/share/applications/"
+mkdir -p ~/.local/share/applications/
 mv "$name".desktop ~/.local/share/applications/
 if [ $? -eq 0 ]
 then

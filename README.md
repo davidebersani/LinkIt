@@ -6,6 +6,8 @@ KDE, Gnome, LXDE, XFCE, MATE and others!
 
 # New version 2.2!
 ## Changelog
+- Version 3.2
+	* Bug fix: fixed a bug that didn't create a directory
 - Version 3.1
 	* Now the button "Cancel" stop the programm and allow you to exit without saving
 	* Select different categories
@@ -35,6 +37,8 @@ Then launch as root :
 ```sh
 ./setup.sh
 ```
+
+After this visit the /etc/linkit/linkit.conf file for setup the script.
 
 Now you can launch the script with a simple command, or you can use the launcher in your menu.
 ```sh
